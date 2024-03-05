@@ -8,7 +8,7 @@
 import Foundation
 
 struct Subscription {
-    let id: UUID
+    let id = UUID()
     let name: String
     let price: Double
     let startingDate: Date
