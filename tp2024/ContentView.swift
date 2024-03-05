@@ -9,13 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "bubble.left.fill")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        List {
+            Text("Bonjour")
+            Text("Bonjour")
+            Text("Bonjour")
+            Text("Bonjour")
+            Text("Bonjour")
         }
-        .padding()
     }
 }
 

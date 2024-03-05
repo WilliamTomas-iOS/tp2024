@@ -12,6 +12,9 @@
 		2350FBC42B95FC5100E92DC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2350FBC32B95FC5100E92DC8 /* Assets.xcassets */; };
 		2350FBC72B95FC5100E92DC8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2350FBC62B95FC5100E92DC8 /* Preview Assets.xcassets */; };
 		2350FBCE2B95FC5D00E92DC8 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2350FBCD2B95FC5D00E92DC8 /* Subscription.swift */; };
+		2350FBEE2B97235300E92DC8 /* total.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2350FBED2B97235300E92DC8 /* total.swift */; };
+		2350FBF02B9723A300E92DC8 /* detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2350FBEF2B9723A300E92DC8 /* detail.swift */; };
+		2350FBF22B97244200E92DC8 /* form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2350FBF12B97244200E92DC8 /* form.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		2350FBC32B95FC5100E92DC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2350FBC62B95FC5100E92DC8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2350FBCD2B95FC5D00E92DC8 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		2350FBED2B97235300E92DC8 /* total.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = total.swift; sourceTree = "<group>"; };
+		2350FBEF2B9723A300E92DC8 /* detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detail.swift; sourceTree = "<group>"; };
+		2350FBF12B97244200E92DC8 /* form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = form.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 				2350FBC32B95FC5100E92DC8 /* Assets.xcassets */,
 				2350FBC52B95FC5100E92DC8 /* Preview Content */,
 				2350FBCD2B95FC5D00E92DC8 /* Subscription.swift */,
+				2350FBED2B97235300E92DC8 /* total.swift */,
+				2350FBEF2B9723A300E92DC8 /* detail.swift */,
+				2350FBF12B97244200E92DC8 /* form.swift */,
 			);
 			path = tp2024;
 			sourceTree = "<group>";
@@ -141,7 +150,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2350FBCE2B95FC5D00E92DC8 /* Subscription.swift in Sources */,
+				2350FBF22B97244200E92DC8 /* form.swift in Sources */,
 				2350FBC22B95FC5000E92DC8 /* ContentView.swift in Sources */,
+				2350FBF02B9723A300E92DC8 /* detail.swift in Sources */,
+				2350FBEE2B97235300E92DC8 /* total.swift in Sources */,
 				2350FBC02B95FC5000E92DC8 /* tp2024App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

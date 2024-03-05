@@ -11,5 +11,5 @@ struct Subscription {
     let id = UUID()
     let name: String
     let price: Double
-    let startingDate: Date
+    let startDate: Date
 }
