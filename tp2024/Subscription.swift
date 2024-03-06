@@ -6,10 +6,18 @@
 //
 
 import Foundation
+import SwiftData
 
-struct Subscription: Identifiable, Hashable {
+@Model
+class Subscription: Identifiable, Hashable {
     let id = UUID()
     var name: String
     var price: Double
     var startDate: Date
+
+    init(name: String, price: Double, startDate: Date) {
+        self.name = name
+        self.price = price
+        self.startDate = startDate
+    }
 }

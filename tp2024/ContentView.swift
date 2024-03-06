@@ -6,13 +6,16 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
 
     @State private var showAddView = false
     @State private var showTotal = false
 
-    @State var subscriptions: [Subscription] = [.init(name: "Netflix", price: 20, startDate: .now)]
+    @Query var subscriptions: [Subscription] = []
+
+    @Environment(\.modelContext) var context
 
     var body: some View {
         NavigationStack {
@@ -20,6 +23,11 @@ struct ContentView: View {
                 ForEach(subscriptions) { subscription in
                     NavigationLink(value: subscription) {
                         Text(subscription.name)
+                    }
+                }
+                .onDelete { indexSet in
+                    for index in indexSet {
+                        context.delete(subscriptions[index])
                     }
                 }
             }
@@ -47,7 +55,8 @@ struct ContentView: View {
             }
             .sheet(isPresented: $showAddView) {
                 form { name, price, date in
-                    subscriptions.append(.init(name: name, price: price, startDate: date))
+                    let sub = Subscription(name: name, price: price, startDate: date)
+                    context.insert(sub)
                 }
             }
             .sheet(isPresented: $showTotal) {

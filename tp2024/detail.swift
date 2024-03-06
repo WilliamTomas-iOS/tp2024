@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct detail: View {
-    @State var total: Double = 0.0
+    @State var total: Double
     var subscription: Subscription
+
+    @State var showUpdateView: Bool = false
 
     init(subscription: Subscription) {
         self.subscription = subscription
@@ -48,8 +50,15 @@ struct detail: View {
             }
 
             Spacer()
+
+            Button("Modifier", action: {
+                showUpdateView.toggle()
+            })
         }
         .padding()
+        .sheet(isPresented: $showUpdateView, content: {
+            updateForm(subscription: subscription)
+        })
     }
 }
 

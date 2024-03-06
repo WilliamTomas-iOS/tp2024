@@ -15,6 +15,7 @@
 		2350FBEE2B97235300E92DC8 /* total.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2350FBED2B97235300E92DC8 /* total.swift */; };
 		2350FBF02B9723A300E92DC8 /* detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2350FBEF2B9723A300E92DC8 /* detail.swift */; };
 		2350FBF22B97244200E92DC8 /* form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2350FBF12B97244200E92DC8 /* form.swift */; };
+		2350FBFC2B989BA600E92DC8 /* updateForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2350FBFB2B989BA600E92DC8 /* updateForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		2350FBED2B97235300E92DC8 /* total.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = total.swift; sourceTree = "<group>"; };
 		2350FBEF2B9723A300E92DC8 /* detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detail.swift; sourceTree = "<group>"; };
 		2350FBF12B97244200E92DC8 /* form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = form.swift; sourceTree = "<group>"; };
+		2350FBFB2B989BA600E92DC8 /* updateForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updateForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				2350FBED2B97235300E92DC8 /* total.swift */,
 				2350FBEF2B9723A300E92DC8 /* detail.swift */,
 				2350FBF12B97244200E92DC8 /* form.swift */,
+				2350FBFB2B989BA600E92DC8 /* updateForm.swift */,
 			);
 			path = tp2024;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				2350FBCE2B95FC5D00E92DC8 /* Subscription.swift in Sources */,
 				2350FBF22B97244200E92DC8 /* form.swift in Sources */,
 				2350FBC22B95FC5000E92DC8 /* ContentView.swift in Sources */,
+				2350FBFC2B989BA600E92DC8 /* updateForm.swift in Sources */,
 				2350FBF02B9723A300E92DC8 /* detail.swift in Sources */,
 				2350FBEE2B97235300E92DC8 /* total.swift in Sources */,
 				2350FBC02B95FC5000E92DC8 /* tp2024App.swift in Sources */,
