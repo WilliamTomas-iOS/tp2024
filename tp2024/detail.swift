@@ -11,6 +11,14 @@ struct detail: View {
     @State var total: Double = 0.0
     var subscription: Subscription
 
+    init(subscription: Subscription) {
+        self.subscription = subscription
+        let startDateComponents = Calendar.current.dateComponents([.year, .month], from: subscription.startDate)
+        let endDateComponents = Calendar.current.dateComponents([.year, .month], from: .now)
+        let diffInDate = Calendar.current.dateComponents([.month], from: startDateComponents, to: endDateComponents).month!
+        total = subscription.price * Double(diffInDate+1)
+    }
+
     var body: some View {
         VStack(alignment: .leading, spacing: 24) {
             Text(subscription.name)
