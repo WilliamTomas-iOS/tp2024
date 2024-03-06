@@ -9,7 +9,8 @@ import SwiftUI
 
 struct detail: View {
     @State var total: Double = 0.0
-    var subscription: Subscription = .init(name: "Netflix", price: 20, startDate: .now)
+    var subscription: Subscription
+
     var body: some View {
         VStack(alignment: .leading, spacing: 24) {
             Text(subscription.name)
@@ -45,5 +46,5 @@ struct detail: View {
 }
 
 #Preview {
-    detail()
+    detail(subscription: .init(name: "Netflix", price: 20, startDate: .now))
 }

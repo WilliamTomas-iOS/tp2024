@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct Subscription {
+struct Subscription: Identifiable, Hashable {
     let id = UUID()
-    let name: String
-    let price: Double
-    let startDate: Date
+    var name: String
+    var price: Double
+    var startDate: Date
 }
